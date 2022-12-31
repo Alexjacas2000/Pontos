@@ -1,0 +1,75 @@
+body{
+    background: linear-gradient(to right, rgba(255, 0, 255, 0.75) 0%, rgba(0, 0, 255, 0.75) 100%);
+    color: whitesmoke;
+    font-size: 20px;
+    margin-left: 1em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Titulos*/
+.titulo{
+  margin-top: 25vh;
+  display: flex;
+  height: 75vh;
+  justify-content: center;
+}
+.titles h1{
+    font-size: 2em;
+}
+.titles h2{
+    font-size: 1.5em;
+}
+/*Letra*/
+.ponto-block{
+    display: block;
+}
+.ponto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li{
+    list-style: none;
+}
+
+/*Menu*/
+.menu{
+    max-width: 800px;
+    list-style: none;
+    display: inline-block;
+    background-color: rgb(37, 37, 39);
+    /*fixando menu no topo da pagina*/
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 0;
+      margin-top: 0px;
+}
+.menu li {
+    display: inline;
+}
+.menu li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+.menu li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+.menu li  ul{
+  position:absolute;
+  top: 65px;
+  left:0;
+  background-color: rgb(37, 37, 39);
+  display:none;
+}
+.menu li:hover ul{
+  display: inline-block;
+}
+.menu li ul li{
+  border:1px solid #c0c0c0;
+  display:block;
+  width:150px;
+}
